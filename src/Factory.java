@@ -21,14 +21,27 @@ public boolean isOpen;//boolean is true/false
     //You can tell it is a constructpr because it does not have void. The name has to match the name of the world
     public Factory(){
         System.out.println("We make houses!");
-        yearFounded=2025;
-        isOpen=false;
+        yearFounded=2007;
+        isOpen=true;
         earnings=1.1;
         products="houses";
         factoryInfo();
 
         //change the yearFounded and isOpen
-        //call factoryInfo
+        //call factoryInfo; again
+
+        //type varName=value;
+        //object of type house
+        //objects are variables that represent the classes that we make
+        House h1= new House();
+        h1.owner="Mr. Kim";
+        h1.address="300 Centre street";
+        h1.isOccupied=true;
+        h1.size=8.2;
+        h1.walls=4;
+        System.out.println(h1.owner);
+        //todo: give all the house instance variables values
+
     }
 
     //todo:make a method called factoryInfo
