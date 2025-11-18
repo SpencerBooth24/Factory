@@ -40,8 +40,17 @@ public boolean isOpen;//boolean is true/false
         h1.size=8.2;
         h1.walls=4;
         System.out.println(h1.owner);
+        House h2 = new House();
+        h2.printinfo();
         //todo: give all the house instance variables values
 
+
+        House myhouse = new House();
+        myhouse.printinfo();
+
+
+        House customhouse = new House(200.24,5,"Mrs. Blair");
+        customhouse.printinfo();
     }
 
     //todo:make a method called factoryInfo
