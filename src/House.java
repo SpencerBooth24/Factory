@@ -15,10 +15,12 @@ isOccupied= true;
 //todo: make a printinfo() method that prints all the hous einstance vars
     }
 //hw: add 2 more parameters to the house constructor: one for isOccupied, one for Address, also fix related problems by adding them to the code in the factory class
-    public House (double pSize, int pWalls, String pOwner){
+    public House (double pSize, int pWalls, String pOwner, boolean pisOccupied, String paddress){
 size = pSize;
 walls=pWalls;
 owner= pOwner;
+isOccupied= pisOccupied;
+address= paddress;
 
     }
 

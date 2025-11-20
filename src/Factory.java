@@ -49,7 +49,7 @@ public boolean isOpen;//boolean is true/false
         myhouse.printinfo();
 
 
-        House customhouse = new House(200.24,5,"Mrs. Blair");
+        House customhouse = new House(200.24,5,"Mrs. Blair",true,"8 imperial lane");
         customhouse.printinfo();
     }
 
