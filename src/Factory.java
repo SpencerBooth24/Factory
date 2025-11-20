@@ -8,7 +8,7 @@ public int yearFounded;//integers is whole numbers
 public boolean isOpen;//boolean is true/false
     public double earnings;//doubles is any number with decimals
     public String products;//anything that can be put in to quotes
-
+    public int random;
     public static void main(String[] args) {
         System.out.println("Welcome to Spencer's Factory :(");
 
@@ -51,6 +51,14 @@ public boolean isOpen;//boolean is true/false
 
         House customhouse = new House(200.24,5,"Mrs. Blair",true,"8 imperial lane");
         customhouse.printinfo();
+
+        Garage g1= new Garage();
+        g1.printginfo();
+        int random= (int)(Math.random() * 101); // 0 to 100
+        for(int x=1; x<=10;x++) {
+            Garage g2 = new Garage(random, "Spencer Booth", true);
+            g2.printginfo();
+        }
     }
 
     //todo:make a method called factoryInfo
